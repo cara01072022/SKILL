@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657558818-XerWrDN5" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "คุณคือผู้โชคดี คนที่ 4 ให้มารับเครดิตฟรี 50",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "SKILL",
+                "weight": "bold",
+                "align": "center",
+                "color": "#99ff66",
+                "size": "lg"
+              },
+              {
+                "type": "text",
+                "text": "เกมส์สล๊อตออนไลน์ อันดับ 1",
+                "color": "#ffff00",
+                "align": "center",
+                "weight": "bold"
+              }
+            ],
+            "margin": "md",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#000000",
+              "endColor": "#006600"
+            },
+            "borderWidth": "medium",
+            "borderColor": "#006600",
+            "cornerRadius": "xl",
+            "paddingStart": "md",
+            "paddingEnd": "md",
+            "offsetBottom": "xs"
+          }
+        ],
+        "margin": "md",
+        "paddingEnd": "md",
+        "paddingStart": "md",
+        "offsetTop": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://www.img.in.th/images/b52f18f5e6b63e7755f5e39b7413a527.png",
+            "size": "full",
+            "aspectMode": "cover"
+          }
+        ],
+        "spacing": "md",
+        "paddingStart": "md",
+        "paddingEnd": "md",
+        "offsetTop": "lg",
+        "cornerRadius": "xxl"
+      },
+      {
+        "type": "text",
+        "text": "เว็บที่กล้าแจกจริง ไม่ต้องฝากก่อน",
+        "align": "center",
+        "color": "#FFFFFF",
+        "margin": "xxl",
+        "size": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "กด คลิกที่นี่เพื่อรับเครดิตฟรี 50",
+                "color": "#ffff00",
+                "align": "center",
+                "weight": "bold",
+                "size": "lg",
+                "margin": "md"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "size": "full",
+                    "aspectRatio": "5:1",
+                    "aspectMode": "fit",
+                    "animated": true,
+                    "url": "https://cdn.discordapp.com/attachments/1028667162828742697/1030491542776971415/ezgif.com-gif-maker_19.png"
+                  }
+                ],
+                "margin": "sm",
+                "cornerRadius": "xxl",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#000000",
+                  "endColor": "#006600"
+                },
+                "action": {
+                  "type": "uri",
+                  "label": " SKILL",
+                  "uri": "https://lin.ee/Rn1UUP5"
+                }
+              }
+            ],
+            "spacing": "xl"
+          }
+        ],
+        "offsetStart": "xs",
+        "paddingEnd": "xl",
+        "paddingStart": "xl",
+        "spacing": "sm",
+        "margin": "md",
+        "offsetBottom": "xl"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#000000",
+      "endColor": "#003300",
+      "centerColor": "#006600"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
